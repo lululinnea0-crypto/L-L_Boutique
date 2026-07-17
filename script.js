@@ -253,3 +253,6 @@ function cambiarCantidad(index, cambio){
     mostrarCarrito();
 
 }
+
+localStorage.removeItem("carrito");
+alert("Carrito limpiado");
