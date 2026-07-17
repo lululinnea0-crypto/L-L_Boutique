@@ -1,1 +1,462 @@
+/* ===========================
+   L&L Boutique
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#ffffff;
+
+    color:#222;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+button{
+
+    font-family:'Poppins',sans-serif;
+
+    cursor:pointer;
+
+    border:none;
+
+}
+
+/* ===========================
+HEADER
+=========================== */
+
+header{
+
+    position:sticky;
+
+    top:0;
+
+    background:#fff;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.logo span{
+
+    color:#ff8db6;
+
+}
+
+.iconos{
+
+    display:flex;
+
+    gap:18px;
+
+    font-size:22px;
+
+}
+
+.iconos i{
+
+    transition:.3s;
+
+}
+
+.iconos i:hover{
+
+    color:#ff8db6;
+
+}
+
+/* ===========================
+BANNER
+=========================== */
+
+.banner{
+
+    height:420px;
+
+    background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),
+    url("https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1200") center/cover;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:30px;
+
+}
+
+.banner-texto{
+
+    max-width:380px;
+
+    background:rgba(255,255,255,.85);
+
+    padding:25px;
+
+    border-radius:20px;
+
+}
+
+.banner-texto h1{
+
+    font-size:36px;
+
+    margin-bottom:15px;
+
+}
+
+.banner-texto p{
+
+    line-height:1.6;
+
+    margin-bottom:20px;
+
+}
+
+.banner-texto button{
+
+    background:#ff8db6;
+
+    color:#fff;
+
+    padding:14px 28px;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.banner-texto button:hover{
+
+    background:#ff6fa4;
+
+    transform:scale(1.05);
+
+}
+
+
+/* ===========================
+CAMPAÑA
+=========================== */
+
+.campania{
+
+    margin:30px 20px;
+
+    padding:25px;
+
+    background:#ffeaf3;
+
+    border-radius:20px;
+
+    text-align:center;
+
+}
+
+.campania h2{
+
+    margin-bottom:15px;
+
+}
+
+.campania p{
+
+    margin:8px 0;
+
+    font-size:16px;
+
+}
+
+/* ===========================
+CATEGORÍAS
+=========================== */
+
+.categorias{
+
+    padding:20px;
+
+}
+
+.categorias h2{
+
+    margin-bottom:20px;
+
+    font-size:28px;
+
+}
+
+.grid-categorias{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+.categoria{
+
+    background:#fff;
+
+    border:2px solid #ffd6e7;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    text-align:center;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.categoria:hover{
+
+    background:#ff8db6;
+
+    color:#fff;
+
+    transform:translateY(-5px);
+
+}
+
+/* ===========================
+PRODUCTOS
+=========================== */
+
+.productos{
+
+    padding:20px;
+
+}
+
+.productos h2{
+
+    margin-bottom:20px;
+
+    font-size:28px;
+
+}
+
+.grid-productos{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.producto{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.producto:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.producto img{
+
+    aspect-ratio:3/4;
+
+    object-fit:cover;
+
+}
+
+.producto h3{
+
+    padding:15px 15px 5px;
+
+    font-size:18px;
+
+}
+
+.precio{
+
+    padding:0 15px;
+
+    color:#ff4f8b;
+
+    font-size:20px;
+
+    font-weight:700;
+
+}
+
+.producto button{
+
+    margin:15px;
+
+    width:calc(100% - 30px);
+
+    background:#ff8db6;
+
+    color:#fff;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+}
+
+/* ===========================
+FOOTER
+=========================== */
+
+footer{
+
+    margin-top:50px;
+
+    background:#111;
+
+    color:#fff;
+
+    padding:40px 20px;
+
+    text-align:center;
+
+}
+
+.footer-contenido h2{
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+}
+
+.footer-contenido p{
+
+    margin:10px 0;
+
+    opacity:.9;
+
+}
+
+.whatsapp{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#25D366;
+
+    color:#fff;
+
+    padding:14px 24px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.whatsapp:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    .banner{
+
+        height:320px;
+
+        padding:20px;
+
+    }
+
+    .banner-texto{
+
+        max-width:100%;
+
+    }
+
+    .banner-texto h1{
+
+        font-size:28px;
+
+    }
+
+    .grid-productos{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .grid-categorias{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
 
