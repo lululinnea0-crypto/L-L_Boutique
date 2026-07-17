@@ -1,3 +1,4 @@
+console.log(JSON.parse(localStorage.getItem("carrito")));
 // ==========================
 // CARRITO L&L BOUTIQUE
 // ==========================
