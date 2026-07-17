@@ -17,3 +17,45 @@ function agregarAlCarrito(producto) {
 
     alert("🛍️ Producto agregado al carrito.");
 }
+
+// ==========================
+// SELECCIÓN DE TALLE
+// ==========================
+
+let talleSeleccionado = "";
+
+document.querySelectorAll(".talles button").forEach(boton => {
+
+    boton.addEventListener("click", () => {
+
+        document.querySelectorAll(".talles button").forEach(b => {
+            b.classList.remove("activo");
+        });
+
+        boton.classList.add("activo");
+        talleSeleccionado = boton.dataset.talle;
+
+    });
+
+});
+
+// ==========================
+// SELECCIÓN DE COLOR
+// ==========================
+
+let colorSeleccionado = "";
+
+document.querySelectorAll(".colores button").forEach(boton => {
+
+    boton.addEventListener("click", () => {
+
+        document.querySelectorAll(".colores button").forEach(b => {
+            b.classList.remove("activo");
+        });
+
+        boton.classList.add("activo");
+        colorSeleccionado = boton.dataset.color;
+
+    });
+
+});
