@@ -315,8 +315,44 @@ Comprá de forma simple, segura y organizada.
 
 
     </form>
+          
+<script>
 
+const formulario = document.querySelector(".formulario");
 
+formulario.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    const nombre = formulario.querySelector('input[type="text"]').value;
+    const telefono = formulario.querySelector('input[type="tel"]').value;
+    const prenda = formulario.querySelectorAll("select")[0].value;
+    const talle = formulario.querySelectorAll("select")[1].value;
+    const color = formulario.querySelectorAll("select")[2].value;
+    const mensaje = formulario.querySelector("textarea").value;
+
+    const texto =
+`🛍️ *Nueva reserva L&L Boutique*
+
+👤 Nombre: ${nombre}
+📱 WhatsApp: ${telefono}
+
+👕 Prenda: ${prenda}
+📏 Talle: ${talle}
+🎨 Color: ${color}
+
+📝 Mensaje:
+${mensaje}`;
+
+    window.open(
+        `https://wa.me/543512901763?text=${encodeURIComponent(texto)}`,
+        "_blank"
+    );
+
+});
+
+</script>
+          
   </section>
 
   <section class="cierre-campania">
