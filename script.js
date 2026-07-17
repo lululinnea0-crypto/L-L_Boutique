@@ -1,4 +1,3 @@
-alert("Script funcionando");
 // ==========================
 // CARRITO L&L BOUTIQUE
 // ==========================
