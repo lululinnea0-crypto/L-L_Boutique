@@ -856,6 +856,13 @@ RESPONSIVE
         width: 90%;
 
     }
+   .opciones button.activo {
+
+    background: #ff8db6;
+    color: white;
+    border: 2px solid #ff8db6;
+
+   }
 
 
 }
