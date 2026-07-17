@@ -792,10 +792,9 @@ RESPONSIVE
     }
 
 
-    .productos {
-
-    grid-template-columns:1fr;
-
+    .productos{
+    grid-template-columns:repeat(2,1fr);
+       
     }
 
     .producto {
