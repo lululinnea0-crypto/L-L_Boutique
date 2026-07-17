@@ -694,82 +694,9 @@ RESPONSIVE
 
     h1 {
         font-size: 32px;
-    }
 
-
-    h2 {
-        font-size: 25px;
-    }
-
-
-    .productos {
-
-        flex-direction: column;
-        align-items: center;
 
     }
-
-
-    .producto {
-
-        width: 90%;
-
-    }
-
-
-    .beneficios-container {
-
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-
-    .beneficio {
-
-        width: 90%;
-
-    }
-
-
-    .contador {
-
-        gap: 10px;
-
-    }
-
-
-    .tiempo {
-
-        width: 75px;
-        height: 75px;
-
-    }
-
-
-    .tiempo span {
-
-        font-size: 25px;
-
-    }
-
-
-    .formulario {
-
-        width: 90%;
-
-    }
-
-
-    .btn-reservar,
-    .btn-catalogo {
-
-        width: 90%;
-
-    }
-
-
-}
 
 .barra-campania {
 
@@ -875,5 +802,87 @@ RESPONSIVE
 
     margin-top: 40px;
     font-size: 14px;
+
+}
+
+@media (max-width: 768px) {
+
+
+    h1 {
+        font-size: 32px;
+    }
+
+
+    h2 {
+        font-size: 25px;
+    }
+
+
+    .productos {
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+    .producto {
+
+        width: 90%;
+
+    }
+
+
+    .beneficios-container {
+
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+
+    .beneficio {
+
+        width: 90%;
+
+    }
+
+
+    .contador {
+
+        gap: 10px;
+
+    }
+
+
+    .tiempo {
+
+        width: 75px;
+        height: 75px;
+
+    }
+
+
+    .tiempo span {
+
+        font-size: 25px;
+
+    }
+
+
+    .formulario {
+
+        width: 90%;
+
+    }
+
+
+    .btn-reservar,
+    .btn-catalogo {
+
+        width: 90%;
+
+    }
+
 
 }
