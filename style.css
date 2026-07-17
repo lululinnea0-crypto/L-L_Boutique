@@ -109,74 +109,38 @@ header{
 /* ===========================
 BANNER
 =========================== */
-
-.banner{
+.banner-campania{
 
     height:420px;
 
-    background:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),
+    background:
+    linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)),
     url("https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1200") center/cover;
 
     display:flex;
-
     align-items:center;
-
+    justify-content:center;
+    text-align:center;
     padding:30px;
 
 }
 
-.banner-texto{
 
-    max-width:380px;
+.banner-campania h1{
 
-    background:rgba(255,255,255,.85);
-
-    padding:25px;
-
-    border-radius:20px;
-
-}
-
-.banner-texto h1{
-
+    color:white;
     font-size:36px;
-
     margin-bottom:15px;
 
 }
 
-.banner-texto p{
 
+.banner-campania p{
+
+    color:white;
     line-height:1.6;
 
-    margin-bottom:20px;
-
 }
-
-.banner-texto button{
-
-    background:#ff8db6;
-
-    color:#fff;
-
-    padding:14px 28px;
-
-    border-radius:30px;
-
-    font-size:16px;
-
-    transition:.3s;
-
-}
-
-.banner-texto button:hover{
-
-    background:#ff6fa4;
-
-    transform:scale(1.05);
-
-}
-
 
 /* ===========================
 CAMPAÑA
