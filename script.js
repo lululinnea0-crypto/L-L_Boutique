@@ -176,9 +176,21 @@ function mostrarCarrito(){
                 <strong>Talle:</strong> ${producto.talle}
                 </p>
 
-                <p>
-                Cantidad: ${producto.cantidad}
-                </p>
+                <div class="cantidad">
+
+    <button onclick="cambiarCantidad(${index}, -1)">
+        -
+    </button>
+
+    <span>
+        ${producto.cantidad}
+    </span>
+
+    <button onclick="cambiarCantidad(${index}, 1)">
+        +
+    </button>
+
+</div>
 
 
                 <button onclick="eliminarProducto(${index})" class="eliminar">
@@ -211,6 +223,32 @@ function eliminarProducto(index){
     carrito.splice(index,1);
 
     localStorage.setItem("carrito", JSON.stringify(carrito));
+
+    mostrarCarrito();
+
+}
+
+// ==========================
+// CAMBIAR CANTIDAD
+// ==========================
+
+function cambiarCantidad(index, cambio){
+
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+
+    carrito[index].cantidad += cambio;
+
+
+    if(carrito[index].cantidad < 1){
+
+        carrito[index].cantidad = 1;
+
+    }
+
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+
 
     mostrarCarrito();
 
