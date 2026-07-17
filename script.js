@@ -121,3 +121,5 @@ if (botonAgregar) {
     });
 
 }
+
+console.log("JS cargado correctamente");
