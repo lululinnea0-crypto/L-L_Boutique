@@ -123,3 +123,95 @@ if (botonAgregar) {
 }
 
 console.log("JS cargado correctamente");
+
+// ==========================
+// MOSTRAR CARRITO
+// ==========================
+
+function mostrarCarrito(){
+
+    const contenedor = document.getElementById("lista-carrito");
+
+    if(!contenedor) return;
+
+
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+
+    if(carrito.length === 0){
+
+        contenedor.innerHTML = `
+            <p>🛒 Tu carrito está vacío</p>
+        `;
+
+        return;
+
+    }
+
+
+    contenedor.innerHTML = "";
+
+
+    carrito.forEach((producto, index)=>{
+
+
+        contenedor.innerHTML += `
+
+        <div class="item-carrito">
+
+            <img src="${producto.imagen}" alt="${producto.nombre}">
+
+
+            <div class="datos">
+
+                <h3>${producto.nombre}</h3>
+
+                <p>$${producto.precio}</p>
+
+                <p>
+                <strong>Color:</strong> ${producto.color}
+                </p>
+
+                <p>
+                <strong>Talle:</strong> ${producto.talle}
+                </p>
+
+                <p>
+                Cantidad: ${producto.cantidad}
+                </p>
+
+
+                <button onclick="eliminarProducto(${index})" class="eliminar">
+
+                    🗑 Eliminar producto
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+        `;
+
+
+    });
+
+
+}
+
+// ==========================
+// ELIMINAR PRODUCTO
+// ==========================
+
+function eliminarProducto(index){
+
+    let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+    carrito.splice(index,1);
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+
+    mostrarCarrito();
+
+}
